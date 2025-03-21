@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML list, HTML image, HTML table, HTML form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML lists</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="Exotic wine.jpg" alt="glass cup and wine on a table" width="500">
+    
+    <!-- Contacts Table -->
+    <h2>HTML tables</h2>
+    <table border="3">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Peace</td>
+            <td>no 42 Street, ikeja lagos</td>
+            <td>+23481234567890</td>
+            <td>peace@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mandela</td>
+            <td>456 Avenue, south africa</td>
+            <td>+2759876543221</td>
+            <td>mandelq@example.com</td>
+        </tr>
+        <tr>
+            <td>Harry james</td>
+            <td>789 Road, ghana</td>
+            <td>+2541223344355</td>
+            <td>harry@example.com</td>
+        </tr>
+        <tr>
+            <td>Francis Goodness </td>
+            <td>159 Lane, Country</td>
+            <td>+223233445566</td>
+            <td>goodness@example.com</td>
+        </tr>
+        <tr>
+            <td>Chris Wilson</td>
+            <td>753 Path, kenya</td>
+            <td>+2573344556677</td>
+            <td>chris@example.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">CANADA</option>
+            <option value="kenya">KENYA</option>
+            <option value="ghana">GHANA</option>
+            <option value="south africa">SOUTH AFRICA</option>
+        </select>
+        <br><br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+        <br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    
+</body>
+</html>
